@@ -1,35 +1,38 @@
 <!doctype html>
 <html lang="en">
+
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
 
     <title> Movie Recommender </title>
     <link rel='stylesheet' href='/static/css/bootstrap.min.css'>
     <link rel='stylesheet' href='/static/style.css'>
   </head>
 
-  <body>
-    <div class="container">
-      <h1>Random Movie Recommender</h1>
-      <img src='/static/main.jpg' width='350'>
+  <body class='fondo'>
+    <!-- <div class="container"</div> -->
+      <h1>Movie Recommender </h1>
+      <!-- <img src='/static/main.jpg' width='350'> -->
     <!-- <div class="alert alert-primary" role="alert">
       A simple primary alert—check it out!
     </div> -->
 
-      <p id='first'>
+      <p class='first'>
         Can you tell me your favorite movies?
       </p>
-      <form action='/recommend' method='GET'>
-        <input type='text' name='fav_movie0' placeholder='Why so serious?'>
-        <input type='text' name='fav_movie1' placeholder='Are you not entertained!!?'>
-        <input type='text' name='fav_movie2' placeholder='You shall not pass!'>
-        <p class='second'>
+
+      <form class='form' action='/recommend' method='GET'>
+        <input type='text' name='fav_movie0' size= '45' placeholder='e.g.:The Godfather'>
+        <input type='text' name='fav_movie1' size= '45' placeholder='e.g.:Star Wars'>
+        <input type='text' name='fav_movie2' size= '45' placeholder='e.g.:Lord of the rings'>
+        <p class='first'>
         How many recommendations do you want?
         </p>
-        <input type= 'text' name='n_movies' value='3'>
-        <input type='submit' value='Get Recommendation'>
+        <input type= 'text' name='n_movies' size= '4'value='3'>
+        <input type='submit' value='Go'>
       </form>
 
           <!-- Optional JavaScript -->

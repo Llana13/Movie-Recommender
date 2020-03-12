@@ -1,6 +1,6 @@
 # Movie-Recommender
 
-![Movie](image.jpg)
+![Movie](butacas.jpg)
 
 
 This is a movie recommender that is based on real user ratings on movies (MovieLens)
