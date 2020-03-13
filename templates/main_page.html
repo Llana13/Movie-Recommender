@@ -25,15 +25,22 @@
       </p>
 
       <form class='form' action='/recommend' method='GET'>
-        <input type='text' name='fav_movie0' size= '45' placeholder='e.g.:The Godfather'>
-        <input type='text' name='fav_movie1' size= '45' placeholder='e.g.:Star Wars'>
-        <input type='text' name='fav_movie2' size= '45' placeholder='e.g.:Lord of the rings'>
+        <input type='text' name='fav_movie0' size= '30' placeholder='e.g.:The Godfather'>
+        <input type='text' name='fav_movie1' size= '30' placeholder='e.g.:Star Wars'>
+        <input type='text' name='fav_movie2' size= '30' placeholder='e.g.:Lord of the rings'>
         <p class='first'>
         How many recommendations do you want?
         </p>
-        <input type= 'text' name='n_movies' size= '4'value='3'>
+        <select name='n_movies'>
+          <option value='1'>1</option>
+          <option value='2'>2</option>
+          <option value='3'>3</option>
+          <option value='4'>4</option>
+          <option value='5'>5</option>
+        </select>
         <input type='submit' value='Go'>
       </form>
+      <button class='button' onclick="window.location.href='https://github.com/Llana13';">GitHub profile</button>
 
           <!-- Optional JavaScript -->
          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
