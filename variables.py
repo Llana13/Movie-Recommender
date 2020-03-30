@@ -34,7 +34,7 @@ for id in no_rated_movies:
 # Dropping the first row (NaN id)
 R = R.iloc[1:]
 
-binary = open('model.bin', 'rb').read()
+binary = open('Movie-Recommender/model.bin', 'rb').read()
 model = pickle.loads(binary)
 
 # movie-genre matrix
