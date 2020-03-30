@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import pickle
+from sklearn.decomposition import NMF
 
 movies_ = pd.DataFrame(pd.read_csv('Movie-Recommender/movies.csv'))
 links = pd.DataFrame(pd.read_csv('Movie-Recommender/links.csv'))
@@ -35,7 +36,7 @@ for id in no_rated_movies:
 R = R.iloc[1:]
 
 binary = open('Movie-Recommender/model.bin', 'rb').read()
-model = pickle.load(binary)
+model = pickle.loads(binary)
 
 # movie-genre matrix
 Q = pd.DataFrame(model.components_, columns=R.columns.to_list(),index= range(model.n_components))
