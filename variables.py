@@ -2,8 +2,8 @@ import pandas as pd
 import numpy as np
 import pickle
 
-links = pd.DataFrame(pd.read_csv('links.csv'))
 movies_ = pd.DataFrame(pd.read_csv('movies.csv'))
+links = pd.DataFrame(pd.read_csv('links.csv'))
 ratings = pd.DataFrame(pd.read_csv('ratings.csv'))
 tags = pd.DataFrame(pd.read_csv('tags.csv'))
 
