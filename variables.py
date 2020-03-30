@@ -35,7 +35,7 @@ for id in no_rated_movies:
 R = R.iloc[1:]
 
 binary = open('Movie-Recommender/model.bin', 'rb').read()
-model = pickle.loads(binary)
+model = pickle.load(binary)
 
 # movie-genre matrix
 Q = pd.DataFrame(model.components_, columns=R.columns.to_list(),index= range(model.n_components))
