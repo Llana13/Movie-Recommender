@@ -9,7 +9,7 @@ Update model binary file in this folder
 '''
 MOVIES = V.movies
 
-binary = open('model.bin', 'rb').read()
+binary = open('/home/Llana13/movie_recommender/model.bin', 'rb').read()
 model = pickle.loads(binary)
 
 def match_movie(movie_dict, fav_movies, n):
