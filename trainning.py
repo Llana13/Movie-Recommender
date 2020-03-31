@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-from sklearn.experimental import enable_iterative_imputer
 from sklearn.decomposition import NMF
 from sklearn.impute import KNNImputer
 import pickle
