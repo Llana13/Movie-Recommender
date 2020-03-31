@@ -11,7 +11,7 @@ app = Flask('movie recommender')
 
 @app.route('/') # Decorator (add extra functionality to a function) In this case enable the function to talk to Flask
 def hello():
-    return render_template('/templates/main_page.html')
+    return render_template(/home/Llana13/movie_recommender/templates/main_page.html)
 
 @app.route('/recommend')
 def run_recommender():
