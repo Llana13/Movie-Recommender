@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 from sklearn.decomposition import NMF
 
-movies_ = pd.DataFrame(pd.read_csv('movie-recommender/movies.csv'))
+movies_ = pd.DataFrame(pd.read_csv('movies.csv'))
 links = pd.DataFrame(pd.read_csv('movie-recommender/links.csv'))
 ratings = pd.DataFrame(pd.read_csv('movie-recommender/ratings.csv'))
 tags = pd.DataFrame(pd.read_csv('movie-recommender/tags.csv'))
