@@ -1,7 +1,4 @@
-
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 import numpy as np
 from sklearn.decomposition import NMF
 from sklearn.impute import KNNImputer
@@ -17,16 +14,16 @@ links['title'] = movies_['title']
 links['genres'] = movies_['genres']
 
 # Set Indexes
-links.set_index('movieId',inplace=True)
-ratings.set_index(['movieId','userId'],inplace=True)
-tags.set_index(['movieId','userId'],inplace=True)
+links.set_index('movieId' ,inplace=True)
+ratings.set_index(['movieId' ,'userId'], inplace=True)
+tags.set_index(['movieId', 'userId'], inplace=True)
 
 # Merge ratings and links into 'df'
-links_ratings = pd.merge(left=links, right=ratings,left_index=True, right_index=True)
+links_ratings = pd.merge(left = links, right = ratings, left_index = True, right_index = True)
 
-df = pd.merge(left=links_ratings, right=tags, how='left',left_on=['movieId','userId'],right_on=['movieId','userId'])
+df = pd.merge(left = links_ratings, right = tags, how = 'left',left_on = ['movieId', 'userId'], right_on = ['movieId' ,'userId'])
 
-df.rename(columns={'timestamp_x': 'timestamp_rating','timestamp_y': 'timestamp_tag'},inplace=True)
+df.rename(columns = {'timestamp_x': 'timestamp_rating','timestamp_y': 'timestamp_tag'}, inplace = True)
 
  ### NMF ###
 
@@ -37,7 +34,7 @@ moviesId = movies_['movieId'].to_list()
 users = range(1,611)
 
 # user_movie_ratings_matrix
-R = ratings_.pivot(index='userId',columns='movieId',values='rating')
+R = ratings_.pivot(index = 'userId', columns = 'movieId', values = 'rating')
 
 ### K-Nearest-Neighbor (KNN) ###
 
