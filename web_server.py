@@ -4,7 +4,6 @@ export FLASK_DEBUG=True
 '''
 from flask import Flask
 from flask import render_template, request
-from sklearn.decomposition import NMF
 import recommender
 
 app = Flask('movie recommender')

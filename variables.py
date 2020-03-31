@@ -1,7 +1,6 @@
 import pandas as pd
 import numpy as np
 import pickle
-from sklearn.decomposition import NMF
 
 movies_ = pd.DataFrame(pd.read_csv('/home/Llana13/movie_recommender/movies.csv'))
 links = pd.DataFrame(pd.read_csv('/home/Llana13/movie_recommender/links.csv'))

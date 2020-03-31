@@ -4,7 +4,6 @@ import re
 import pickle
 import numpy as np
 from heapq import nlargest
-from sklearn.decomposition import NMF
 '''
 Update model binary file in this folder
 '''
