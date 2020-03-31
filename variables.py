@@ -3,10 +3,10 @@ import numpy as np
 import pickle
 from sklearn.decomposition import NMF
 
-movies_ = pd.DataFrame(pd.read_csv('movies.csv'))
-links = pd.DataFrame(pd.read_csv('links.csv'))
-ratings = pd.DataFrame(pd.read_csv('ratings.csv'))
-tags = pd.DataFrame(pd.read_csv('tags.csv'))
+movies_ = pd.DataFrame(pd.read_csv('/home/Llana13/movie_recommender/movies.csv'))
+links = pd.DataFrame(pd.read_csv('/home/Llana13/movie_recommender/links.csv'))
+ratings = pd.DataFrame(pd.read_csv('/home/Llana13/movie_recommender/ratings.csv'))
+tags = pd.DataFrame(pd.read_csv('/home/Llana13/movie_recommender/tags.csv'))
 
 movies_.drop_duplicates(subset='title',inplace=True)
 
@@ -35,7 +35,7 @@ for id in no_rated_movies:
 # Dropping the first row (NaN id)
 R = R.iloc[1:]
 
-binary = open('model.bin', 'rb').read()
+binary = open('/home/Llana13/movie_recommender/model.bin', 'rb').read()
 model = pickle.loads(binary)
 
 # movie-genre matrix
