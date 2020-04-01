@@ -39,13 +39,6 @@ p{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.fondo2{
-  background-image: url(/home/Llana13/movie_recommender/static/butacas.jpg);
-  height: 500px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .button {
   margin: 0 auto;
   border-radius: 12px;
