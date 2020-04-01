@@ -6,7 +6,7 @@ from flask import Flask
 from flask import render_template, request
 import recommender
 
-app = Flask('movie recommender')
+app = Flask('movie recommender', template_folder='/home/Llana13/movie_recommender/templates')
 
 
 @app.route('/') # Decorator (add extra functionality to a function) In this case enable the function to talk to Flask
