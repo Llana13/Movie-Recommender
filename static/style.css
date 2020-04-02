@@ -33,7 +33,7 @@ p{
   margin-top: 30px;
 }
 .fondo{
-  background-image: url(/home/Llana13/movie_recommender/static/butacas.jpg);
+  background-image: url(/static/butacas.jpg);
   height: 500px;
   background-position: center;
   background-repeat: no-repeat;
